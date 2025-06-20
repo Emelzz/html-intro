@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Genesys Contact Form</h2>
+    <p><strong>Please fill the form to get started...</strong></p>
+    <form action="https://formspree.io/f/mkgbvrgp" method="post">
+      <!-- I enclosed some input fileds and their label in a div so they can appear on a new line -->   
+      <div>
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          name="First-Name"
+          id="Name"
+          placeholder="First Name"
+          autofocus
+          required
+        />
+        <input
+          type="text"
+          name="Other-Name"
+          id=""
+          placeholder="Other Name"
+          required
+        />
+        <input type="text" name="Last-Name" id="" placeholder="Last Name" required />
+      </div>
+      <div>
+        <label for="Email">Email Address</label>
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Email Address"
+          required
+        />
+      </div>
+      <div>
+        <label for="number">Phone Number</label>
+        <input
+          type="tel"
+          name="Telephone Number"
+          id="number"
+          placeholder="Mobile Number"
+          value="+234"
+          maxlength="20"
+          required
+        />
+        <div>
+          <input type="radio" value="male"  name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio"  value="female" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+      <input type="radio" value="Learnable"  name="membership" id="paid" />
+      <label for="paid">Learnable</label>
+      <input type="radio" value="Upskill" name="membership" id="free" />
+      <label for="free">Upskill</label>
+      <div>
+        <select name="Course" id="" required>
+          <option value="">Pick a track...</option>
+          <option value="WD">Web Development</option>
+          <option value="PD">Product Design</option>
+          <option value="DA">Data Analysis</option>
+          <option value="UU">UI/UX</option>
+        </select>
+      </div>
+      <div>
+        <!-- I enclosed in a div to separate the checkboxes -->
+      <p><strong>pick software skills you hope to master </strong></p>
+      <input type="checkbox" name="html" id="html">
+      <label for="html">HTML</label>
+      <input type="checkbox" name="css" id="css">
+      <label for="css">CSS</label>
+      <input type="checkbox" name="js" id="javascript">
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" name="django" id="django">
+      <label for="django">Django</label>
+      <input type="checkbox" name="figma" id="figma">
+      <label for="figma">Figma</label>
+      <input type="checkbox" name="python" id="python">
+      <label for="python">Python</label>
+      <input type="checkbox" name="sql" id="sql">
+      <label for="sql">SQL</label>
+      </div>
+      <div>
+        <label for="comments">Comments (Optional)</label>
+        <div>
+          <textarea
+            name=""
+            id="comments"
+            placeholder="feel free to drop a comment..."
+          ></textarea>
+        </div>
+      </div>
+      <button type="reset">Clear</button>
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
